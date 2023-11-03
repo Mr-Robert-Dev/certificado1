@@ -1,0 +1,129 @@
+@page {
+  size: auto; /* Define o tamanho da página automaticamente (será baseado no conteúdo) */
+  margin: 0; /* Define margens como 0 para maximizar o espaço disponível */
+  width: 210mm; /* Largura da página A4 em paisagem (297mm x 210mm) */
+  height: 90mm; /* Altura é definida como metade da largura (2:1) */
+  size: landscape; /* Define a orientação para paisagem */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  .certificate {
+    height: 95%;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 0 auto;
+    background-image:url(certificado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  h1 {
+    font-size: 48px;
+    width: 100%;
+  }
+  p {
+    font-size: 24px;
+    margin-left: 50px;
+  }
+  .course-name {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .student-name {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .date {
+    font-style: italic;
+    font-size:16px;
+  }
+  .data{
+    align-items: end;
+    display:flex;
+    height: 100%;
+    justify-content: center;
+
+  }
+  @media only print {
+   
+    .certificate {
+      height: 95%;
+      width:auto;
+      border: 2px solid #333;
+      padding: 20px;
+      margin: 0 auto;
+      background-image:url(certificado.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+
+    }
+  }
+  .botao{
+    display: flex;
+    justify-self: center;
+    justify-items: center;
+    text-align: center
+  }
+
+  #button{
+    display: none;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .certificate{
+    display: none;
+  }
+
+
+
+  form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button#certificado {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button#certificado:hover {
+    background-color: #0056b3;
+  }
+
+.formulario{
+  
+ 
+ align-items: center;
+ align-self: center;
+ height: 100%;
+}  
