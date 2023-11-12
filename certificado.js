@@ -17,6 +17,8 @@ document.getElementById("certificado").addEventListener("click", function () {
       form.style.display = "none"
       baixar.style.display ="flex"
       certificado.style.display = "flex"
+      baixar2.style.display ="none"
+
 
     });
 
