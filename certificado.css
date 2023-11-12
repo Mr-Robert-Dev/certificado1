@@ -11,7 +11,7 @@ body {
     text-align: center;
   }
   .certificate {
-    height: 95%;
+    height: 90%;
     width:auto;
     display: flex;
     flex-direction: column;
@@ -23,24 +23,24 @@ body {
     background-repeat: no-repeat;
   }
   h1 {
-    font-size: 48px;
+    font-size: 3em;
     width: 100%;
+    margin-top: 120px;
   }
   p {
-    font-size: 24px;
-    margin-left: 50px;
+    font-size: 1.8em;
+    margin-left: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
-  .course-name {
-    font-weight: bold;
-    font-size: 48px;
-  }
+ 
   .student-name {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2.5em;
   }
   .date {
     font-style: italic;
-    font-size:16px;
+    font-size: 0.8em;
   }
   .data{
     align-items: end;
@@ -49,22 +49,7 @@ body {
     justify-content: center;
 
   }
-  @media only print {
-   
-    .certificate {
-      height: 95%;
-      width:auto;
-      border: 2px solid #333;
-      padding: 20px;
-      margin: 0 auto;
-      background-image:url(certificado.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      -webkit-print-color-adjust: exact;
-      print-color-adjust: exact;
 
-    }
-  }
   .botao{
     display: flex;
     justify-self: center;
@@ -116,14 +101,70 @@ body {
     transition: background-color 0.3s;
   }
   
+  #button2:hover {
+    background-color: #0056b3;
+  }
+  #button2 {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
   button#certificado:hover {
     background-color: #0056b3;
   }
-
 .formulario{
-  
  
  align-items: center;
  align-self: center;
  height: 100%;
 }  
+
+  @media only print {
+   
+    .certificate {
+      height: 95%;
+      width:auto;
+      border: 2px solid #333;
+      padding: 20px;
+      margin: 0 auto;
+      background-image:url(certificado.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      
+    }
+    #button2 {
+      display: none
+    }
+
+      
+  }
+
+  
+
+  @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+        margin-left: 3%;
+    }
+    .course-name {
+        font-size: 1.5em;
+    }
+    .student-name {
+        font-size: 0.8em;
+    }
+    .date {
+        font-size: 0.6em;
+    }
+}
+  
